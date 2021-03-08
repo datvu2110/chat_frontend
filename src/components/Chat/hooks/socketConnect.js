@@ -9,7 +9,7 @@ function useSocket(user, dispatch) {
         dispatch(fetchChats())
             .then(res => {
 
-                const socket = socketIOClient.connect('http://127.0.0.1:8000')
+                const socket = socketIOClient.connect('https://chat-backend-dat.herokuapp.com')
 
                 dispatch(setSocket(socket))
 
