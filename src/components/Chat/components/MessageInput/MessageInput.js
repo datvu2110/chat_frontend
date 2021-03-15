@@ -123,30 +123,6 @@ const MessageInput = ({ chat }) => {
                     }
                 </div>
 
-                <div id='image-upload'>
-                    {
-                        image.name ?
-                            <div id='image-details'>
-                                <p className='m-0'>{image.name}</p>
-                                <FontAwesomeIcon
-                                    onClick={handleImageUpload}
-                                    icon='upload'
-                                    className='fa-icon'
-                                />
-                                <FontAwesomeIcon
-                                    onClick={() => setImage('')}
-                                    icon='times'
-                                    className='fa-icon'
-                                />
-                            </div>
-                            : null
-                    }
-                    <FontAwesomeIcon
-                        onClick={() => fileUpload.current.click()}
-                        icon={['far', 'image']}
-                        className='fa-icon'
-                    />
-                </div>
             </div>
             <div id='message-input'>
                 <input

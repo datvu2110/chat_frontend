@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import loginImage from '../../assets/images/register.jpg'
 import { Link } from 'react-router-dom'
-
 import { useDispatch } from 'react-redux'
 import { login } from '../../store/actions/auth'
 

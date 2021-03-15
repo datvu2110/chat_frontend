@@ -1,9 +1,14 @@
-import React from 'react';
-import { render } from '@testing-library/react';
-import App from './App';
+import App from './App'
+import EnzymeTestAdapter from './EnzymeTestAdapter'
+import { shallow } from  'enzyme'
+import '@testing-library/jest-dom';
+import React from 'react'
 
-test('renders learn react link', () => {
-  const { getByText } = render(<App />);
-  const linkElement = getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+EnzymeTestAdapter.init()
+
+const appShallow = shallow(<App></App>);
+
+it('Count the div', () => {
+  const countDiv = appShallow.find("div")
+  expect(countDiv.length).toBe(1)
 });

@@ -1,68 +1,49 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# LetsChat
+LetsChat is a simple and intelligent application that keeps you and your friends stay connected
 
-## Available Scripts
+This repo is the front-end client, built in React.  You can see the app live at [https://letschat2110.herokuapp.com/](https://letschat2110.herokuapp.com/)
 
-In the project directory, you can run:
+The app is meant for mobile use, but will still scale for desktop viewing.
 
-### `npm start`
+To check out the app, I suggest you create a dummy account so you can see the onboarding experience.  But, if you just want to view what a program looks like, you can use the demo account.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+#### Demo Account Details
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+* email: vudat@gmail.com
+* password: vietnamusa21
 
-### `npm test`
+## Introduction
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Get one of the best chat apps loaded onto your phone or your computer, and you never have to worry about staying in touch. And staying in touch with friends and family is exactly what you'll want to do, as the coronavirus pandemic continues to keep us from being together in person.
 
-### `npm run build`
+## Quick App Demo
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![Imgur](https://i.imgur.com/LJ4eqTA.gif)
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## Technology
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### Front End
 
-### `npm run eject`
+* React
+  * Create React App
+  * React Router
+* HTML5
+* CSS3
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+#### Testing
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* Jest
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+#### Production
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+* Deployed via Heroku
 
-## Learn More
+## Getting Started
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Run `npm install` to load dependencies
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Run `npm test` to ensure a stable build
 
-### Code Splitting
+This is only the front end client, so develop locally you'll need the backend server as well.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+To get the backend up and running see [https://github.com/datvu2110/chat_backend](https://github.com/datvu2110/chat_backend)

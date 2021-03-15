@@ -40,7 +40,7 @@ const Navbar = () => {
         <div id='navbar' className='card-shadow'>
             <h2>Chat.io</h2>
             <div onClick={() => setShowProfileOptions(!showProfileOptions)} id='profile-menu'>
-                <img width="40" height="40" src={user.avatar} alt='Avatar' />
+               
                 <p>{user.firstName} {user.lastName}</p>
                 <FontAwesomeIcon icon='caret-down' className='fa-icon' />
 
@@ -107,12 +107,6 @@ const Navbar = () => {
                                         required='required'
                                         type='password'
                                         placeholder='Password' />
-                                </div>
-
-                                <div className='input-field mb-2'>
-                                    <input
-                                        onChange={e => setAvatar(e.target.files[0])}
-                                        type='file' />
                                 </div>
                             </form>
                         </Fragment>
