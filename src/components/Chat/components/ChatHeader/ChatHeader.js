@@ -17,19 +17,6 @@ const ChatHeader = ({ chat }) => {
     const socket = useSelector(state => state.chatReducer.socket)
 
 
-    // const searchFriends = (e) => {
-    //     ChatService.searchUsers(e.target.value)
-    //         .then(res => setSuggestions(res))
-    // }
-
-    // const addNewFriend = (id) => {
-    //     ChatService.addFriendToGroupChat(id, chat.id)
-    //         .then(data => {
-    //             socket.emit('add-user-to-group', data)
-    //             setShowAddFriendModal(false)
-    //         }).catch(err => console.log(err))
-    // }
-
     const leaveChat = () => {
         ChatService.leaveCurrentChat(chat.id)
             .then(data => {
@@ -67,13 +54,7 @@ const ChatHeader = ({ chat }) => {
             {
                 showChatOptions
                     ? <div id='settings'>
-                        {/* <div onClick={() => setShowAddFriendModal(true)}>
-                            <FontAwesomeIcon
-                                icon={['fas', 'user-plus']}
-                                className='fa-icon'
-                            />
-                            <p>Add user to chat</p>
-                        </div> */}
+                      
 
                         {
                             chat.type === 'group'

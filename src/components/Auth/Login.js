@@ -3,19 +3,20 @@ import loginImage from '../../assets/images/register.jpg'
 import { Link } from 'react-router-dom'
 import { useDispatch } from 'react-redux'
 import { login } from '../../store/actions/auth'
-
 import './Auth.scss'
+
 
 const Login = ({ history }) => {
 
-    const dispatch = useDispatch()
+
+    //const dispatch = useDispatch()
+    
 
     const [email, setEmail] = useState('vudat@gmail.com')
     const [password, setPassword] = useState('vietnamusa21')
 
     const submitForm = (e) => {
         e.preventDefault()
-
         dispatch(login({ email, password }, history))
     }
 

@@ -7,7 +7,7 @@ import './Auth.scss'
 
 const Register = ({ history }) => {
 
-    const dispatch = useDispatch()
+    //const dispatch = useDispatch()
 
     const [firstName, setFirstName] = useState('')
     const [lastName, setLastName] = useState('')
