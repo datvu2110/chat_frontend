@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import Login from './components/Auth/Login'
 import Register from './components/Auth/Register'
 import Chat from './components/Chat/Chat'
@@ -15,6 +15,12 @@ import LandingPage from './LandingPage';
 library.add(faSmile, faImage, faSpinner, faEllipsisV, faUserPlus, faSignOutAlt, faTrash, faCaretDown, faUpload, faTimes, faBell)
 
 function App() {
+
+    useEffect(() => {
+        let title = "LetsChat Together"
+        document.title = title;
+    });
+
     return (
         <Router>
             <div className="App">
