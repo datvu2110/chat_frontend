@@ -82,33 +82,7 @@ const ChatHeader = ({ chat }) => {
                     </div>
                     : null
             }
-            {/* {
-                showAddFriendModal &&
-                <Modal click={() => setShowAddFriendModal(false)}>
-                    <Fragment key='header'>
-                        <h3 className='m-0'>Add friend to group chat</h3>
-                    </Fragment>
-
-                    <Fragment key='body'>
-                        <p>Find friends by typing their name bellow</p>
-                        <input
-                            onInput={e => searchFriends(e)}
-                            type='text'
-                            placeholder='Search...'
-                        />
-                        <div id='suggestions'>
-                            {
-                                suggestions.map(user => {
-                                    return <div key={user.id} className='suggestion'>
-                                        <p className='m-0'>{user.firstName} {user.lastName}</p>
-                                        <button onClick={() => addNewFriend(user.id)}>ADD</button>
-                                    </div>
-                                })
-                            }
-                        </div>
-                    </Fragment>
-                </Modal>
-            } */}
+            
         </Fragment>
     )
 }
