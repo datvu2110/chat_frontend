@@ -19,12 +19,11 @@ const Navbar = () => {
     const [email, setEmail] = useState(user.email)
     const [gender, setGender] = useState(user.gender)
     const [password, setPassword] = useState('')
-    const [avatar, setAvatar] = useState('')
 
     const submitForm = (e) => {
         e.preventDefault()
 
-        const form = { firstName, lastName, email, gender, avatar }
+        const form = { firstName, lastName, email, gender}
         if (password.length > 0) form.password = password
 
         const formData = new FormData()

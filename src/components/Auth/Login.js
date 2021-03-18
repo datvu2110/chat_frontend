@@ -9,7 +9,7 @@ import './Auth.scss'
 const Login = ({ history }) => {
 
 
-    //const dispatch = useDispatch()
+    const dispatch = useDispatch()
     
 
     const [email, setEmail] = useState('vudat@gmail.com')

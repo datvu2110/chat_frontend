@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');
+
+.particles{
+    position: fixed;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    z-index: -1;
+    background-color: #232741;
+  
+  }
+
+.landing-background {
+    margin-top:3%;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  
+}
+.center{
+    display: table;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.paragraph{
+    color: white;
+    font-size: 1.7em;
+    text-align: center;
+}
+
+.started-button{
+    display: table;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #4267B2;
+    border: 1px black solid;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.head{
+    color: whitesmoke;
+    font-family: 'Akaya Telivigala', cursive;
+    font-size: 3em;
+}
+
+.screenshot{
+    display: table;
+    margin-right: auto;
+    margin-left: auto;
+    width: 50%;
+}
+
+@media only screen and (max-width: 800px) {
+    .head{
+        font-size: 25px;
+    }
+    .landing-background {
+        padding-top:3%;
+        display: table;
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .started-button{
+        display: table;
+        margin-right: auto;
+        margin-left: auto;
+        background-color: #4267B2;
+        border: 1px black solid;
+        color: white;
+        padding: 5px;
+    }
+    .paragraph{
+        text-align: center;
+    }
+
+    .screenshot{
+        width: 40%;
+    }
+    
+}
+
+@media only screen and (max-width: 600px) {
+    .landing-background {
+        padding-top:25%;
+    }
+    .paragraph{
+        font-size: 1em;
+        padding-left: 5%;
+        text-align: center;
+    }
+
+    .screenshot{
+        width: 60%;
+    }
+    
+}
