@@ -11,7 +11,7 @@ const Message = ({ user, chat, index, message }) => {
     }
 
     return (
-        <div className={`message ${determineMargin()} ${message.fromUserId === user.id ? 'creator' : ''}`}>
+        <section className={`message ${determineMargin()} ${message.fromUserId === user.id ? 'creator' : ''}`}>
             <div className={message.fromUserId === user.id ? 'owner' : 'other-person'}>
                 {
                     message.fromUserId !== user.id
@@ -23,7 +23,7 @@ const Message = ({ user, chat, index, message }) => {
                         : <img src={message.message} alt='User upload' />
                 }
             </div>
-        </div>
+        </section>
     )
 }
 

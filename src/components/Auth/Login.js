@@ -21,8 +21,8 @@ const Login = ({ history }) => {
     }
 
     return (
-        <div id='auth-container'>
-            <div id='auth-card'>
+        <article id='auth-container'>
+            <section id='auth-card'>
                 <div className='card-shadow'>
                     <div id='image-section'>
                         <img className="login-img" src={loginImage} alt='Login' />
@@ -56,8 +56,8 @@ const Login = ({ history }) => {
                         <p>Don't have an account? <Link to='/register'>Register</Link></p>
                     </div>
                 </div>
-            </div>
-        </div>
+            </section>
+        </article>
     );
 }
 

@@ -17,7 +17,7 @@ const Modal = (props) => {
     }
 
     return (
-        <div className='modal-mask modal-close' onClick={closeModal}>
+        <section className='modal-mask modal-close' onClick={closeModal}>
             <div className='modal-wrapper'>
                 <div className='modal-container'>
 
@@ -36,7 +36,7 @@ const Modal = (props) => {
 
                 </div>
             </div>
-        </div>
+        </section>
     );
 }
 

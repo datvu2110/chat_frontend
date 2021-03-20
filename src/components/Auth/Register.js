@@ -22,8 +22,8 @@ const Register = ({ history }) => {
     }
 
     return (
-        <div id='auth-container'>
-            <div id='auth-card'>
+        <article id='auth-container'>
+            <section id='auth-card'>
                 <div className='card-shadow'>
                     <div id='image-section'>
                         <img className="register-img" src={registerImage} alt='Register' />
@@ -86,8 +86,8 @@ const Register = ({ history }) => {
                         <p>Already have an account? <Link to='/login'>Login</Link></p>
                     </div>
                 </div>
-            </div>
-        </div>
+            </section>
+        </article>
     );
 }
 

@@ -33,7 +33,7 @@ const FriendList = () => {
     }
 
     return (
-        <div id='friends' className='shadow-light'>
+        <section id='friends' className='shadow-light'>
             <div id='title'>
                 <h3 className='m-0'>Friends</h3>
                 <button onClick={() => setShowFriendsModal(true)}>ADD</button>
@@ -77,7 +77,7 @@ const FriendList = () => {
                     </Fragment>
                 </Modal>
             }
-        </div>
+        </section>
     )
 }
 

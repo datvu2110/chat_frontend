@@ -110,7 +110,7 @@ const MessageInput = ({ chat }) => {
     }
 
     return (
-        <div id='input-container'>
+        <section id='input-container'>
             <div id='image-upload-container'>
                 <div>
                     {
@@ -153,7 +153,7 @@ const MessageInput = ({ chat }) => {
                     : null
             }
 
-        </div>
+        </section>
     )
 }
 

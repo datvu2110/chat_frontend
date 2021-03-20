@@ -15,13 +15,13 @@ const Chat = () => {
 
  
     return (
-        <div id='chat-container'>
+        <article id='chat-container'>
             <Navbar />
             <div id='chat-wrap'>
                 <FriendList />
                 <Messenger />
             </div>
-        </div>
+        </article>
     );
 }
 

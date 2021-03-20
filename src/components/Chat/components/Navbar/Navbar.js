@@ -36,9 +36,9 @@ const Navbar = () => {
     }
 
     return (
-        <div id='navbar' className='card-shadow'>
+        <nav id='navbar' className='card-shadow'>
             <h2>LetsChat</h2>
-            <div onClick={() => setShowProfileOptions(!showProfileOptions)} id='profile-menu'>
+            <section onClick={() => setShowProfileOptions(!showProfileOptions)} id='profile-menu'>
                
                 <p>{user.firstName} {user.lastName}</p>
                 <FontAwesomeIcon icon='caret-down' className='fa-icon' />
@@ -117,8 +117,8 @@ const Navbar = () => {
                     </Modal>
                 }
 
-            </div>
-        </div>
+            </section>
+        </nav>
     );
 }
 

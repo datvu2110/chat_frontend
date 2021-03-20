@@ -19,7 +19,7 @@ const Friend = ({ chat, click }) => {
     }
 
     return (
-        <div onClick={click} className={`friend-list ${isChatOpened()}`}>
+        <section onClick={click} className={`friend-list ${isChatOpened()}`}>
             <div>
                 <div className='friend-info'>
                     <h4 className='m-0'>{chat.Users[0].firstName} {chat.Users[0].lastName}</h4>
@@ -29,7 +29,7 @@ const Friend = ({ chat, click }) => {
             <div className='friend-status'>
                 <span className={`online-status ${userStatus(chat.Users[0])}`}></span>
             </div>
-        </div>
+        </section>
     )
 }
 
