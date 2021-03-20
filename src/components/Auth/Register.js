@@ -7,7 +7,7 @@ import './Auth.scss'
 
 const Register = ({ history }) => {
 
-    //const dispatch = useDispatch()
+    const dispatch = useDispatch()
 
     const [firstName, setFirstName] = useState('')
     const [lastName, setLastName] = useState('')
@@ -18,7 +18,7 @@ const Register = ({ history }) => {
     const submitForm = (e) => {
         e.preventDefault()
 
-        //dispatch(register({ firstName, lastName, email, gender, password }, history))
+        dispatch(register({ firstName, lastName, email, gender, password }, history))
     }
 
     return (

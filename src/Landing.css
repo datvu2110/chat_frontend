@@ -16,7 +16,7 @@
     width: 70%;
     margin-left: auto;
     margin-right: auto;
-  
+    padding-top: 0;
 }
 .center{
     display: table;
@@ -40,7 +40,7 @@
     padding: 15px;
     border-radius: 5px;
     cursor: pointer;
-    text-decoration: none;
+    text-decoration: ;
 }
 
 .head{
@@ -53,7 +53,7 @@
     display: table;
     margin-right: auto;
     margin-left: auto;
-    width: 50%;
+    width: 40%;
 }
 
 @media only screen and (max-width: 800px) {

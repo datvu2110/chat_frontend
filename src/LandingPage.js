@@ -101,7 +101,8 @@ class LandingPage extends Component {
                     <div>
                         <div>
                             <h3 className="head center">Successful Completion</h3>
-                            <p className="center paragraph">LetsChat is a simple and intelligent application that keeps you and your friends stay connected</p>
+                            <p className="center paragraph">LetsChat is a simple and intelligent application that keeps you and your friends connected</p>
+                            <p className="center paragraph">Let's register, add your friends, and start chatting with them</p>
                             <img className="screenshot" src={screenshot} ></img>
                             <Link to="/login"><button className="started-button">GETTING STARTED</button></Link>
                         </div>
