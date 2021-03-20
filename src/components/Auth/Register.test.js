@@ -12,7 +12,7 @@ const appShallow = shallow(<Register />);
 
 it('Count the div for Login', () => {
   const countDiv = appShallow.find("div")
-  expect(countDiv.length).toBe(10)
+  expect(countDiv.length).toBe(8)
 });
 
 it('Count the button', () => {

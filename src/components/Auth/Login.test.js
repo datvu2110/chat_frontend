@@ -13,7 +13,7 @@ const appShallow = shallow( <Login /> );
 it('Count the div for Login', () => {
     console.log(appShallow)
     const countDiv = appShallow.find("div")
-    expect(countDiv.length).toBe(7)
+    expect(countDiv.length).toBe(5)
 });
 
 it('Count the button', () => {
