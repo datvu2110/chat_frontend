@@ -3,6 +3,7 @@ import './Landing.css';
 import screenshot from './assets/images/image.png'
 import {Link} from 'react-router-dom'
 import Particles from 'react-particles-js'
+import { DragSwitch } from 'react-dragswitch'
 
 const particleOptions = {
     "particles": {
@@ -56,14 +57,45 @@ const particleOptions = {
     }
 }
 
+const none= {
+    "particles": {
+        "number" : {
+            "value": 0
+        }
+    }
+}
+
 class LandingPage extends Component {
+    state= {
+        chkbox: true,
+        animation: true
+    }
+
+    handleClick = () => {
+        this.setState({
+            chkbox : !this.state.chkbox,
+            animation : !this.state.animation
+        })
+     
+    }
     
     render(){
   
         return(
+
+    
+
             <div>
+
+                <div style={{color:"white"}}>Animation</div>
+                <input type="checkbox" defaultChecked={this.state.chkbox} onClick={this.handleClick} />
+
+                {
+                    this.state.animation 
+                    ? <Particles className="particles" params={particleOptions} />
+                    : <Particles className="particles" params={none} />
+                }
                 
-                <Particles className="particles" params={particleOptions} />
 
                 <div className="landing-background">
                     <div>

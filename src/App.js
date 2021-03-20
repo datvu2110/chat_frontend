@@ -18,7 +18,7 @@ function App() {
 
     useEffect(() => {
         let title = "LetsChat Together"
-        document.title = title;
+        document.title = title
     });
 
     return (
@@ -36,4 +36,4 @@ function App() {
     );
 }
 
-export default App;
+export default App
